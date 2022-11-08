@@ -2,11 +2,15 @@ header {
   height: 520px;
   width: 100%;
   background-image: url('../images/black-linen.png');
-  background-color: #cc9d3f;
+  background-color: #d38e26;
   color: #FFFFFF;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+header h2 {
+  margin-top: 0;
 }
