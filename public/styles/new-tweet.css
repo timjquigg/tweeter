@@ -1,0 +1,42 @@
+.new-tweet div:first-child {
+  border-bottom: solid black;
+  padding-bottom: 0.75em;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.new-tweet div:last-child {
+  font-family: "Bungee", sans-serif;
+  margin-top: 0.75em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.counter {
+  font-weight: 600;
+  /* font-size: 1.5em; */
+}
+
+.new-tweet label[for="tweet-text"] {
+  width: 100%;
+  flex-shrink: 5;
+}
+
+.new-tweet textarea[name="text"] {
+  width: 100%;
+  resize: none;
+  background-color: inherit;
+  border: none;
+  flex-shrink: 2;
+}
+
+.new-tweet button {
+  background-color: #4056a1;
+  color: #ffffff;
+}

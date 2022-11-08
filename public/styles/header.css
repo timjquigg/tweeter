@@ -1,0 +1,12 @@
+header {
+  height: 520px;
+  width: 100%;
+  background-image: url('../images/black-linen.png');
+  background-color: #cc9d3f;
+  color: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
