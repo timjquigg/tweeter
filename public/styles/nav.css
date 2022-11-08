@@ -25,3 +25,7 @@ nav {
   flex-direction: column;
   align-items: center;
 }
+
+nav i {
+  color: red;
+}
