@@ -1,4 +1,4 @@
-header {
+body>header {
   height: 520px;
   width: 100%;
   background-image: url('../images/black-linen.png');
@@ -11,6 +11,6 @@ header {
   align-items: center;
 }
 
-header h2 {
+body>header h2 {
   margin-top: 0;
 }
