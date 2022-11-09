@@ -1,6 +1,3 @@
-/* eslint-env jquery */
-/* eslint-env browser */
-
 const charCount = function() {
   const max = 140;
   const current = $(this).val().length;
