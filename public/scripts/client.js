@@ -12,8 +12,15 @@ const renderTweets = function(tweets) {
   // calls createTweetElement for each tweet
     const tweetElement = createTweetElement(tweets[tweet]);
     // takes return value and appends it to the tweets container
-    $('#tweets-container').append(tweetElement);
+    $('#tweets-container').prepend(tweetElement);
   }
+};
+
+const getLatestTweet = function(tweets) {
+  const keys = Object.keys(tweets);
+  const lastTweet = tweets[keys[keys.length - 1]];
+  const tweetElement = createTweetElement(lastTweet);
+  $('#tweets-container').prepend(tweetElement);
 };
 
 const createTweetElement = function(tweet) {
@@ -88,24 +95,24 @@ const handleSubmit = function(event) {
     method: 'POST',
     success: ()=>{
       $(tweet).val('');
-      loadTweets();
+      loadTweets(getLatestTweet);
     }
   });
 
 };
 
-const loadTweets = function() {
+const loadTweets = function(callback) {
   $.ajax({
     url: '/tweets',
     method: 'GET',
-  }).then(renderTweets);
+  }).then(callback);
 };
 
 
 
 $(document).ready(function() {
  
-  loadTweets();
+  loadTweets(renderTweets);
 
   $('.new-tweet > form').on('submit', handleSubmit);
 
