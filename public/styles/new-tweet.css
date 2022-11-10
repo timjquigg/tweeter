@@ -20,20 +20,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .new-tweet .counter {
   font-weight: 600;
-  /* font-size: 1.5em; */
 }
 
-.counter.negative {
+.new-tweet .counter.negative {
   color: red;
 }
 
 .new-tweet label[for="tweet-text"] {
   width: 100%;
-  /* flex-shrink: 5; */
 }
 
 .new-tweet textarea[name="text"] {
@@ -42,10 +41,28 @@
   resize: none;
   background-color: inherit;
   border: none;
-  /* flex-shrink: 2; */
 }
 
 .new-tweet button {
   background-color: #4056a1;
   color: #ffffff;
+  height: 1.5em;
+}
+
+.error {
+  font-family: "Source Sans Pro", sans-serif;
+  color: red;
+  margin: 0 0.25em;
+  width: 60%;
+  text-align: center;
+  padding: 0.25em;
+  border: 3px solid red;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.error h5 {
+  margin: 0;
 }

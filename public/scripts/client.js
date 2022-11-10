@@ -64,14 +64,21 @@ const createTweetElement = function(tweet) {
 const handleSubmit = function(event) {
   event.preventDefault();
   const tweet = $(this).find('#tweet-text');
+  const error = $(this).find('.error');
+
+  error.hide();
 
   if (tweet.val() === '') {
-    alert('Cannot submit and empty tweet!');
+    const message = 'CANNOT SUBMIT AN EMPTY TWEET!';
+    error.find('h5').text(message);
+    error.slideDown();
     return;
   }
 
   if (tweet.val().length > 140) {
-    alert('Tweet length cannot exceed 140 characters!');
+    const message = 'TWEET LENGTH CANNOT EXCEED 140 CHARACTERS!';
+    error.find('h5').text(message);
+    error.slideDown();
     return;
   }
 
