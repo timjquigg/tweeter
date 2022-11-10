@@ -16,6 +16,7 @@ nav {
 
 .navbar-brand {
   font-family: "Bungee", sans-serif;
+  margin-bottom: 0.75em;
   margin-left: 1.5em;
 }
 
@@ -26,6 +27,31 @@ nav {
   align-items: center;
 }
 
-nav i {
+.navbar-buttons {
+  height: 1.25em;
+}
+
+#show-new-tweet {
+  background: transparent;
+  border-style: none;
   color: red;
+}
+
+@keyframes button {
+  from {
+    margin-top: 0
+  }
+
+  to {
+    margin-top: 0.5em
+  }
+
+}
+
+#show-new-tweet:hover {
+  cursor: pointer;
+  animation-name: button;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }

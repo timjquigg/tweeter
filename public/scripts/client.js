@@ -101,6 +101,8 @@ const loadTweets = function() {
   }).then(renderTweets);
 };
 
+
+
 $(document).ready(function() {
  
   loadTweets();
