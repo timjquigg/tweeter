@@ -43,11 +43,14 @@ main {
   right: 0.5em;
   height: 3em;
   width: 3em;
+  border: none;
   border-radius: 3em;
   color: #ffffff;
   background-color: red;
+  opacity: 70%;
 }
 
 #to-top:hover {
+  opacity: 100%;
   cursor: pointer;
 }
