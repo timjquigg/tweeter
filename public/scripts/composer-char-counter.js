@@ -1,7 +1,7 @@
 const charCount = function() {
   autosize($(this));
   const max = 140;
-  const current = $(this).val().length;
+  const current = $(this).val().trim().length;
   const count = max - current;
   const counter = $(this).parent().next().find(".counter");
   counter.text(count);

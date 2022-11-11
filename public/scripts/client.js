@@ -75,7 +75,7 @@ const handleSubmit = function(event) {
 
   error.hide();
 
-  if (tweet.val() === '') {
+  if (tweet.val().trim() === '') {
     const message = 'CANNOT SUBMIT AN EMPTY TWEET!';
     error.find('h5').text(message);
     error.slideDown();

@@ -19,6 +19,7 @@ article.tweet header {
 
 article.tweet header .user {
   margin: 1em 1.5em;
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
