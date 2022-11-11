@@ -1,10 +1,12 @@
-body>header {
+main>header {
+  top: 0;
   height: auto;
   width: 100%;
   background-image: url('../images/black-linen.png');
   background-color: #d38e26;
   color: #FFFFFF;
   text-align: center;
+  position: sticky;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@ body>header {
   align-items: center;
 }
 
-body>header img {
+main>header img {
   width: 50%;
   padding: 0.5em;
 }

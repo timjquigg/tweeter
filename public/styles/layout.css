@@ -36,7 +36,7 @@ p {
   margin: 0;
 }
 
-main {
+.tweets {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
