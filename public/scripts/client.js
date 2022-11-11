@@ -95,6 +95,7 @@ const handleSubmit = function(event) {
     method: 'POST',
     success: ()=>{
       $(tweet).val('');
+      $('.new-tweet').find('.counter').val('140');
       loadTweets(getLatestTweet);
     }
   });
