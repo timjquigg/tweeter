@@ -42,6 +42,15 @@ main {
   background-color: #f4f1ec;
 }
 
+#tweets-container {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+}
+
 #to-top {
   position: fixed;
   bottom: 0.5em;

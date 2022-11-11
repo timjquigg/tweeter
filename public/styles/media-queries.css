@@ -24,16 +24,12 @@
     background-color: #4056a1;
   }
 
-  .navbar-brand {
-    margin-left: 1.5em;
-  }
-
-  .navbar-menu {
-    margin-right: 1.5em;
+  nav {
+    padding: 1.5em;
   }
 
   body>header {
-    height: 450px;
+    height: 485px;
     justify-content: flex-end;
   }
 
