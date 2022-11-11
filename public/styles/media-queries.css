@@ -38,6 +38,7 @@
     top: calc(120px + 1.5em);
 
     width: 40vw;
+    max-width: 500px;
     height: fit-content;
     padding-top: 0.75em;
     justify-content: flex-end;
@@ -49,4 +50,7 @@
     width: 100%;
   }
 
+  #tweets-container {
+    max-width: 800px;
+  }
 }
