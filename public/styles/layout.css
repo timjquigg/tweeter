@@ -20,7 +20,7 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  /* font-size: 18px; */
 }
 
 /*
@@ -29,6 +29,11 @@ body {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+h2,
+p {
+  margin: 0;
 }
 
 main {

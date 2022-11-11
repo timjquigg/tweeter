@@ -4,6 +4,7 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -25,6 +26,7 @@
   <link rel="stylesheet" href="./styles/header.css" type="text/css" />
   <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="./styles/tweet.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/media-queries.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -41,8 +43,9 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span class="navbar-brand">tweeter</span>
-    <div class="navbar-menu"><span><strong>Write</strong> a new tweet</span>
+    <h2 class="navbar-brand">tweeter</h2>
+    <div class="navbar-menu">
+      <p><strong>Write</strong> a new tweet</p>
       <div class="navbar-buttons">
         <button id="show-new-tweet"><i class="fa-solid fa-angles-down"></i></button>
       </div>
@@ -52,7 +55,6 @@
     <div>
       <img src="/images/profile-hex.png">
     </div>
-    <br>
     <div>
       <h2>Your Name</h2>
     </div>

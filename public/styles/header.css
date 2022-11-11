@@ -1,16 +1,18 @@
 body>header {
-  height: 520px;
+  height: auto;
   width: 100%;
   background-image: url('../images/black-linen.png');
   background-color: #d38e26;
   color: #FFFFFF;
+  text-align: center;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
-body>header h2 {
-  margin-top: 0;
+body>header img {
+  width: 50%;
+  padding: 0.5em;
 }

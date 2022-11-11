@@ -1,0 +1,43 @@
+/* Tablets */
+@media only screen and (min-width: 768px) {
+
+  body {
+    font-size: 24px;
+  }
+
+  body>header {
+    padding-bottom: 0.75em;
+  }
+
+  body>header img {
+    width: 60%;
+  }
+
+  nav {
+    padding: 0.75em;
+  }
+}
+
+/* Laptops/Desktops */
+@media only screen and (min-width: 1042px) {
+  nav {
+    background-color: #4056a1;
+  }
+
+  .navbar-brand {
+    margin-left: 1.5em;
+  }
+
+  .navbar-menu {
+    margin-right: 1.5em;
+  }
+
+  body>header {
+    height: 450px;
+    justify-content: flex-end;
+  }
+
+  body>header img {
+    width: 100%;
+  }
+}
