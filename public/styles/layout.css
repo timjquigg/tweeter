@@ -20,26 +20,12 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  /* font-size: 18px; */
-}
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
-body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
 h2,
 p {
   margin: 0;
-}
-
-.tweets {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #f4f1ec;
 }
 
 #tweets-container {
@@ -49,6 +35,12 @@ p {
   align-items: center;
   gap: 1em;
 
+}
+
+.tweets {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f4f1ec;
 }
 
 #to-top {

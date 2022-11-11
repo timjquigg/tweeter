@@ -1,5 +1,4 @@
 nav {
-  /* Box */
   position: fixed;
   top: 0;
   height: auto;
@@ -8,7 +7,6 @@ nav {
   z-index: 1;
   color: #FFFFFF;
 
-  /* Flexbox */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -46,7 +44,7 @@ nav {
 
 }
 
-.navbar-menu {
+.navbar-menu:hover {
   cursor: pointer;
 }
 

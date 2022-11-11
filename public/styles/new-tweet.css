@@ -10,7 +10,6 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .new-tweet div:last-child {
@@ -35,7 +34,7 @@
   width: 100%;
 }
 
-.new-tweet textarea[name="text"] {
+#tweet-text {
   width: 100%;
   margin-top: 0.5em;
   resize: none;
@@ -47,6 +46,7 @@
   background-color: #4056a1;
   color: #ffffff;
   height: 1.5em;
+  border-radius: 0.25em;
 }
 
 .error {
@@ -65,4 +65,8 @@
 
 .error h5 {
   margin: 0;
+}
+
+.new-tweet button:hover {
+  cursor: pointer;
 }
