@@ -25,7 +25,7 @@ const toTop = function() {
 
 $(document).ready(function() {
 
-  $('#show-new-tweet').on('click', toggleNewTweet);
+  $('.navbar-menu').on('click', toggleNewTweet);
   $(document).on('scroll', showToTop);
   $('#to-top').on('click', toTop);
 });
